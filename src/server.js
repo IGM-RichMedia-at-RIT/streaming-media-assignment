@@ -9,7 +9,16 @@ const onRequest = (request, response) => {
 
   switch (request.url) {
     case '/':
-      htmlHandler.getIndex(request, response);
+      htmlHandler.getClient(request, response);
+      break;
+    case '/client.html':
+      htmlHandler.getClient(request, response);
+      break;
+    case '/client2.html':
+      htmlHandler.getClient2(request, response);
+      break;
+    case '/client3.html':
+      htmlHandler.getClient3(request, response);
       break;
     case '/party.mp4':
       mediaHandler.getParty(request, response);
@@ -21,7 +30,7 @@ const onRequest = (request, response) => {
       mediaHandler.getBird(request, response);
       break;
     default:
-      htmlHandler.getIndex(request, response);
+      htmlHandler.getClient(request, response);
       break;
   }
 };
