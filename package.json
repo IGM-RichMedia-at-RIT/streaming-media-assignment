@@ -1,0 +1,31 @@
+{
+  "name": "streaming-media-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Tests complete\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MATTTdotexe/streaming-media-assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MATTTdotexe/streaming-media-assignment/issues"
+  },
+  "homepage": "https://github.com/MATTTdotexe/streaming-media-assignment#readme"
+}
