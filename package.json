@@ -1,0 +1,22 @@
+{
+  "name": "streaming-media-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankLuo426/streaming-media-assignment.git"
+  },
+  "author": "Frank Luo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrankLuo426/streaming-media-assignment/issues"
+  },
+  "homepage": "https://github.com/FrankLuo426/streaming-media-assignment#readme"
+}
+
