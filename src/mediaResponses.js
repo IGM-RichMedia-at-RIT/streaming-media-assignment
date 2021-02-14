@@ -38,7 +38,7 @@ const getParty = (request, response) => {
       'Content-Range': `bytes ${start}-${end}/${total}`,
       'Accept-Ranges': 'bytes',
       'Content-Length': chunksize,
-      'Content-Type': 'video.mp4',
+      'Content-Type': 'video/mp4',
     });
 
     const stream = fs.createReadStream(file, {
@@ -95,7 +95,7 @@ const getBling = (request, response) => {
       'Content-Range': `bytes ${start}-${end}/${total}`,
       'Accept-Ranges': 'bytes',
       'Content-Length': chunksize,
-      'Content-Type': 'video.mp4',
+      'Content-Type': 'audio/mp3',
     });
 
     const stream = fs.createReadStream(file, {
@@ -117,6 +117,7 @@ const getBling = (request, response) => {
 
 const getBird = (request, response) => {
   const file = path.resolve(__dirname, '../client/bird.mp4');
+
 
   fs.stat(file, (err, stats) => {
     if (err) {
@@ -152,7 +153,7 @@ const getBird = (request, response) => {
       'Content-Range': `bytes ${start}-${end}/${total}`,
       'Accept-Ranges': 'bytes',
       'Content-Length': chunksize,
-      'Content-Type': 'video.mp4',
+      'Content-Type': 'video/mp4',
     });
 
     const stream = fs.createReadStream(file, {
