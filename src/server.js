@@ -10,13 +10,16 @@ const onRequest = (request, response) => {
     case '/':
       htmlHandler.getIndex(request, response);
       break;
+    case '/client':
+      htmlHandler.getIndex(request, response);
+      break;
     case '/client2':
       htmlHandler.getClient2(request, response);
       break;
     case '/client3':
       htmlHandler.getClient3(request, response);
       break;
-    case 'party.mp4':
+    case '/party.mp4':
       mediaHandler.getParty(request, response);
       break;
     case '/bling.mp3':
