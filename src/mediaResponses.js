@@ -47,11 +47,11 @@ const getParty = (request, response) => {
     });
 
     stream.on('open', () => {
-      response.pipe(response);
+      stream.pipe(response);
     });
 
     stream.on('error', (streamErr) => {
-      response.end(streamErr);
+      stream.end(streamErr);
     });
 
     return stream;
@@ -104,11 +104,11 @@ const getBling = (request, response) => {
     });
 
     stream.on('open', () => {
-      response.pipe(response);
+      stream.pipe(response);
     });
 
     stream.on('error', (streamErr) => {
-      response.end(streamErr);
+      stream.end(streamErr);
     });
 
     return stream;
@@ -116,7 +116,7 @@ const getBling = (request, response) => {
 };
 
 const getBird = (request, response) => {
-  const file = path.resolve(__dirname, '../client/bird.mp3');
+  const file = path.resolve(__dirname, '../client/bird.mp4');
 
   fs.stat(file, (err, stats) => {
     if (err) {
@@ -161,11 +161,11 @@ const getBird = (request, response) => {
     });
 
     stream.on('open', () => {
-      response.pipe(response);
+      stream.pipe(response);
     });
 
     stream.on('error', (streamErr) => {
-      response.end(streamErr);
+      stream.end(streamErr);
     });
 
     return stream;
