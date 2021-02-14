@@ -118,7 +118,6 @@ const getBling = (request, response) => {
 const getBird = (request, response) => {
   const file = path.resolve(__dirname, '../client/bird.mp4');
 
-
   fs.stat(file, (err, stats) => {
     if (err) {
       if (err.code === 'ENOENT') {
