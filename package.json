@@ -17,6 +17,11 @@
   "bugs": {
     "url": "https://github.com/FrankLuo426/streaming-media-assignment/issues"
   },
-  "homepage": "https://github.com/FrankLuo426/streaming-media-assignment#readme"
+  "homepage": "https://github.com/FrankLuo426/streaming-media-assignment#readme",
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
 }
-
