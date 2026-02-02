@@ -1,0 +1,16 @@
+{
+  "name": "streaming-media-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eslint.config.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Tests complete\""
+  },
+  "author": "Noah Idowu",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.39.2"
+  }
+}
